@@ -22,7 +22,7 @@ In order to get started be sure to clone this project onto your Docker Host. Cre
 git clone https://github.com/Jay-Wani/dockercompose-sampleapp.git
 
 
-# Analyze the Docker Compose file that we will be using to build the system. 
+# Analyze the Docker Compose file 
 
 We will be using the below `docker-compose.yml` file to build the ecosystem. 
 
@@ -54,7 +54,9 @@ Services : This denotes the configuration of the service that we are building.
 redis : We setup the redis container from the redis image
 
 
-# Analyze the Dockerfile that we will use to build the image of webservices app container. 
+# Analyze the Dockerfile 
+
+We will use this Dockerfile to build the image of webservices app container. 
 
 ```yaml
 ADD . /sampleapp
