@@ -56,5 +56,3 @@ redis : We setup the redis container from the redis image
 
 
 
-Service : We build a Service that uses the Py
-
