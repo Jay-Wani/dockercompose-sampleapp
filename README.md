@@ -56,4 +56,12 @@ redis : We setup the redis container from the redis image
 
 # Analyze the Dockerfile that we will use to build the image of webservices app container. 
 
-
+```yaml
+ADD . /sampleapp
+WORKDIR /sampleapp
+RUN apk-install python \
+    python-dev \
+    py-pip &&\
+    pip install -r requirements.txt
+CMD ["python", "app.py"]
+```
