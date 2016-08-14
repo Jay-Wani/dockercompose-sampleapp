@@ -12,7 +12,7 @@ We have to start by installing Docker and Docker Compose on your machine.
 Install Docker :            [Docker](https://docs.docker.com/installation/) and 
 Install Docker Compose :    [Docker Compose](https://docs.docker.com/compose/install/)
 
-After installing Docker and Docker Compose we would now get stated by cloning this project onto our dcoker host machine. 
+After installing Docker and Docker Compose we would now get stated by cloning this project onto our docker host machine. 
 
 
 # Cloning Git Repository
@@ -22,7 +22,7 @@ In order to get started be sure to clone this project onto your Docker Host. Cre
 git clone https://github.com/Jay-Wani/dockercompose-sampleapp.git
 
 
-# Create the Docker Compose File that we will be using to build the system. 
+# Analyze the Docker Compose file that we will be using to build the system. 
 
 We will be using the below `docker-compose.yml` file to build the ecosystem. 
 
@@ -40,3 +40,21 @@ services:
   redis:
     image: redis
 ```
+
+The yaml files are highly dependent on the spaces for formatting and running the commands, please ensure that the spaces in your file are exactly as shown in the example above.  
+
+Version : This tells us about the version of docker-compose that we are using. 
+
+Services : This denotes the configuration of the service that we are building. 
+            Step 1 : We build the python-app from the Dockerfile placed in the current working directory where we are working.
+            Step 2 : We map the port no 5000 on the localhost to the port 5000 on the container.
+            Step 3 : We map our current working directory to the /code folder on the container
+            Step 4 : We configure the container to talk to the redis container
+
+redis : We setup the redis container from the redis image
+
+
+
+
+Service : We build a Service that uses the Py
+
