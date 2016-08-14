@@ -69,3 +69,20 @@ RUN apk-install python \
     pip install -r requirements.txt
 CMD ["python", "app.py"]
 ```
+
+
+# Compose Commands for bringing up the app.
+
+```yaml
+docker-compose up -d
+```
+
+# Command for building your own image from Dockerfile
+
+```yaml
+docker build -t sampleapp .
+```
+
+
+
+
