@@ -1,5 +1,5 @@
 # dockercompose-sampleapp
-A demo on how to use docker-compose to create a Web Service connected to a load balancer and a Redis Database.
+A demo on how to use docker-compose to create a Web Service connected to a Redis Database.
 
 We would use an exampled on the lines of the one used by Docker to illustrate basic Compose functionality. This is a simple Python App that sets up a simple webpage displaying the number of hits to that page and and uses Redis backend to store the number of hits to that page. 
 
