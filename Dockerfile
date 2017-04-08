@@ -1,5 +1,5 @@
 FROM gliderlabs/alpine:latest
-MAINTAINER Junaid Wani <w.m.junaid@gmail.com>
+MAINTAINER Junaid <junaid.w@outlook.com>
 LABEL Description="Creating the build image for the Docker-Compose Sample app."
 
 ADD . /sampleapp
