@@ -1,6 +1,6 @@
 FROM gliderlabs/alpine:latest
 MAINTAINER Junaid <example@example.com>
-LABEL Description="Creating the build image for the Docker-Compose Sample app."
+LABEL Description="Docker 10 Days - Build image for the Docker-Compose Sample app."
 
 ADD . /sampleapp
 WORKDIR /sampleapp
